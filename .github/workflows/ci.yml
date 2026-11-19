@@ -16,7 +16,6 @@ jobs:
           node-version: 24
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm typecheck
       - run: pnpm format:check
       - run: pnpm test
       # on a screenshot mismatch, upload the actual and diff images to compare

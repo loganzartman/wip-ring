@@ -2,16 +2,20 @@
 
 a [fairy-ring](https://fairy-ring.loga.nz) webring.
 
-- `public/fairy-ring.toml`: the ring's config. members are listed under `[[sites]]`.
-- `public/fairy-ring.css`: the ring's shared theme.
-
-both are published to github pages on every push to `main`, along with a preview page.
+```html
+<script type="module" src="https://cdn.jsdelivr.net/npm/fairy-ring@0.2/dist/standalone.js"></script>
+<link rel="stylesheet" href="https://loganzartman.github.io/wip-ring/fairy-ring.css" />
+<fairy-ring
+  class="wip-ring"
+  config-url="https://loganzartman.github.io/wip-ring/fairy-ring.toml"
+></fairy-ring>
+```
 
 ## development
 
 ```sh
 pnpm install
-pnpm dev          # preview at http://localhost:5173. reloads when public/ changes.
+pnpm dev          # preview at http://localhost:5173 with hot reload
 pnpm test         # check the config and compare screenshots (runs in docker)
 pnpm test:update  # update screenshots after an intended change
 ```

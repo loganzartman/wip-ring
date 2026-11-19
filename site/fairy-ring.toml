@@ -1,4 +1,4 @@
-# the webring config, published at https://<pages-host>/fairy-ring.toml.
+# the webring config, published at https://loganzartman.github.io/wip-ring/fairy-ring.toml.
 # reference: https://fairy-ring.loga.nz/?path=/story/docs-config--config
 configVersion = 1
 name = { en = "wip ring" }

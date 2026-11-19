@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>wip ring</title>
+    <!-- keep the version in sync with fairy-ring in package.json -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/fairy-ring@0.2/dist/standalone.js"
+    ></script>
+    <link rel="stylesheet" href="./fairy-ring.css" />
+    <style>
+      body {
+        max-width: 48rem;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        font:
+          16px/1.5 system-ui,
+          sans-serif;
+      }
+      pre {
+        overflow-x: auto;
+        padding: 0.75em 1em;
+        background: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>wip ring</h1>
+    <fairy-ring class="wip-ring" config-url="./fairy-ring.toml"></fairy-ring>
+
+    <h2>join</h2>
+    <p>add your site to <code>fairy-ring.toml</code> in a PR, then put this on your page:</p>
+    <pre><code>&lt;script type="module" src="https://cdn.jsdelivr.net/npm/fairy-ring@0.2/dist/standalone.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="https://loganzartman.github.io/wip-ring/fairy-ring.css"&gt;
+&lt;fairy-ring class="wip-ring" config-url="https://loganzartman.github.io/wip-ring/fairy-ring.toml"&gt;&lt;/fairy-ring&gt;</code></pre>
+  </body>
+</html>
